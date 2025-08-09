@@ -1,0 +1,65 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Design the first instructions for a new assembly language. You will need to define instructions for initializing registers, loading from memory, and adding.",
+      "instructions": [
+        "Define a natural language instruction for initializing a register with an integer value (e.g., `init $t0, 5004`).",
+        "Define a natural language instruction for loading a value from a memory address (held in a register) into another register.",
+        "Define a natural language instruction for adding the values in two registers and storing the sum in a third register."
+      ],
+      "testcases": [],
+      "questionToGrade": "Using the instructions you just defined, write a full assembly program that saves memory addresses 5004 and 5012 to $t0 and $t1, loads the integers from those addresses into $t2 and $t3, and adds them into $t4."
+    },
+    {
+      "id": 2,
+      "text": "Extend your assembly language by designing instructions for division and storing a register's value to memory.",
+      "instructions": [
+        "Define a natural language instruction for dividing the value in one register by the value in another, storing the result in a third register.",
+        "Define a natural language instruction for storing the value from a register into a specific memory address."
+      ],
+      "testcases": [],
+      "questionToGrade": "Using all defined instructions, write a program that loads integers from memory addresses 5004 and 5016, divides the second by the first, and stores the result in memory address 5008."
+    },
+    {
+      "id": 3,
+      "text": "Add conditional logic to your language. Design instructions for comparing registers and for subtraction.",
+      "instructions": [
+        "Define a conditional instruction (e.g., `lest` for 'less than') that compares two registers and jumps to one of two labels based on the result.",
+        "Define a `sub` instruction for subtracting the value of one register from another and storing the difference."
+      ],
+      "testcases": [],
+      "questionToGrade": "Write a program that adds the values in $t2 and $t4, compares the sum with the value in $t3, and if the sum is less, stores the difference ($t3 - sum) in register $t6."
+    },
+    {
+      "id": 4,
+      "text": "Implement looping by designing an unconditional jump instruction.",
+      "instructions": [
+        "Define an unconditional `jump` instruction that transfers program execution to a specified label."
+      ],
+      "testcases": [],
+      "questionToGrade": "Write a program that uses your `jump` and conditional instructions to create a loop. The program should start with x=2 (in $t1) and i=1 (in $t0) and double the value of x as long as i < 4."
+    },
+    {
+      "id": 5,
+      "text": "Add a multiplication instruction to your language.",
+      "instructions": [
+        "Define a `mul` instruction for multiplying the values in two registers and storing the product in a third."
+      ],
+      "testcases": [],
+      "questionToGrade": "Write a program to create a 3-element integer array starting at base address 5000. The value of each element should be the square of its index (i.e., array[0]=0, array[1]=1, array[2]=4)."
+    },
+    {
+      "id": 6,
+      "text": "Using all the instructions you have designed, write a complete program that finds the minimum value in a 4-element integer array.",
+      "instructions": [
+        "Write a full program that finds the minimum value of a 4-element integer array with a base address of 5000. The final minimum value should be stored in register $t0."
+      ],
+      "testcases": [
+        "Test with array [10, 20, 100, 1]",
+        "Test with array [50, 5, -10, 80]",
+        "Test with array [-1, -10, 0, -5]"
+      ]
+    }
+  ]
+}

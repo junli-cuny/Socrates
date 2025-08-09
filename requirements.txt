@@ -1,0 +1,12 @@
+# Core dependencies for OpenAI API and environment variables
+openai==1.58.1
+python-dotenv==1.0.1
+
+# Jupyter and widget dependencies for interactive notebooks
+notebook==7.2.1
+ipywidgets==8.1.5
+ipython==8.12.3
+nbformat==5.10.4
+
+# Dependency for serving notebooks as web apps
+voila==0.5.8

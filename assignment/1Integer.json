@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "We introduce a novel number system where every distinct symbol denotes a unique digit. Observe the examples below and their decimal values, then deduce the rules of this system.\n\n- `_` = 0\n- `A` = 1\n- `A_` = 3\n- `AB` = 5",
+      "instructions": [
+        "Provide a detailed explanation of the rules for this number system, including its base and the value of each symbol (`_`, `A`, `B`)."
+      ],
+      "testcases": [
+        "BB=8",
+        "AA=4",
+        "B_=6",
+        "BA=7",
+        "A__=9"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Here is another number system with its own unique symbols and rules. Observe the examples and deduce the guiding principles.\n\n- `#` = 0\n- `x` = 1\n- `z` = 3\n- `xx#` = 20\n- `yxy` = 38\n- `xyz` = 27",
+      "instructions": [
+        "Provide a detailed explanation of the rules for this number system, including its base and the decimal value of each symbol (`#`, `x`, `y`, `z`)."
+      ],
+      "testcases": [
+        "yz=11",
+        "z#x=49",
+        "#zyx=57",
+        "xyx=25",
+        "yy#=40"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This number system relates to binary. Examples are provided for converting between this system and binary. Decipher the rules based on these conversions.\n\n**Binary to New System:**\n- `0011` = D\n- `1001` = J\n- `10011000` = JI\n- `01000001` = EB\n\n**New System to Binary:**\n- `AA` = 00000000\n- `CF` = 00100101",
+      "instructions": [
+        "Explain the conversion rules between this system and binary. What is the decimal value of each symbol (A-J)? How are multi-symbol numbers constructed?"
+      ],
+      "testcases": [
+        "B=1",
+        "DJ=57",
+        "BAF=293",
+        "IJ=137",
+        "GEJ=1610"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "This final system represents both positive and negative integers. Deduce its rules from the examples provided below.\n\n- `AABB` = 3\n- `BABB` = 11\n- `aabb` = -3\n- `baba` = -10\n- `AAAA` = 0\n- `aaaa` = 0\n- `BBBA` = 14\n- `bbbb` = -15",
+      "instructions": [
+        "Explain the rules for this signed number system. How are positive and negative numbers distinguished? What are the base and the values for symbols `A`/`a` and `B`/`b`?"
+      ],
+      "testcases": [
+        "ABBB=7",
+        "BAAA=8",
+        "abba=-6",
+        "bbaa=-12",
+        "babb=-11"
+      ]
+    }
+  ]
+}

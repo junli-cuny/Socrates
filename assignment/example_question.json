@@ -1,0 +1,26 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "text": "Explain the concept of Big O notation and give examples of common time complexities.",
+            "instructions": ["Provide a detailed explanation with examples for O(1), O(n), O(log n), and O(n^2)."],
+            "testcases": ["O(1)", "O(n)", "O(log n)", "O(n^2)"]
+        },
+        {
+            "id": 2,
+            "text": "What is a hash table and how does it work? Provide an example of how collisions can be handled.",
+            "instructions": ["Explain separate chaining and open addressing as collision handling methods."],
+            "testcases": ["Separate Chaining", "Open Addressing"]
+        },
+        {
+            "id": 3,
+            "text": "Describe the differences between a stack and a queue. How are they implemented in programming?",
+            "instructions": [
+                "Provide an example of the push/enqueue operation for both a stack and a queue.", 
+                "Provide an example of the pop/dequeue operation for both a stack and a queue."
+            ],
+            "testcases": [],
+            "questionToGrade": "Provide a single code example in Python that correctly utilizes both a stack (for one task) and a queue (for another task) to demonstrate their different behaviors (LIFO vs. FIFO)."
+        }
+    ]
+}

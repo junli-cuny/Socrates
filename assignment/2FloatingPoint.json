@@ -1,0 +1,60 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "The following examples show numbers in a new mixed-base system. Based on these examples, deduce how a number in this new system is converted into decimal.\n\n- `1.1` (new base) = `1.25` (decimal)\n- `10.01` (new base) = `2.0625` (decimal)\n- `101.001` (new base) = `5.015625` (decimal)",
+      "instructions": [
+        "Explain the conversion rules. What is the base for the integer part of the number, and what is the base for the fractional part?"
+      ],
+      "testcases": [
+        "0.1 new base = 0.25 decimal",
+        "1.01 new base = 1.0625 decimal",
+        "10.001 new base = 2.015625 decimal",
+        "1100.1 new base = 12.25 decimal",
+        "1001.1 new base = 9.25 decimal"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "This new system for floating-point numbers uses letters to represent exponents. Observe the examples and determine the rules of conversion.\n\n- `2.05H` = 2.05 x 10<sup>7</sup>\n- `0.10B` = 0.10 x 10<sup>1</sup>\n- `1.0007d` = 1.0007 x 10<sup>-3</sup>\n- `0.9ba` = 0.9 x 10<sup>-10</sup>",
+      "instructions": [
+        "Explain the rules of this system. What do the uppercase letters (A-J) and lowercase letters (a-j) represent? How are multi-letter exponents calculated?"
+      ],
+      "testcases": [
+        "2D = 2 x 10^3",
+        "1.1I = 1.1 x 10^8",
+        "2cb = 2 x 10^-21",
+        "1.10BA = 1.1 x 10^10",
+        "1.3BAF = 1.3 x 10^105"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The following examples show a new method to represent 32-symbol floating-point numbers, similar to IEEE 754. Based on these examples, figure out the underlying rules.\n\n- `BAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA` = +1.0 x 2<sup>4</sup> = 16\n- `bAAAAABAAABAAAAAAAAAAAAAAAAAAAAA` = -1.25 x 2<sup>4</sup> = -20\n- `baaaaaabaAAAAAAAAAAAAAAAAAAAAAAA` = -1.0 x 2<sup>-2</sup> = -0.25",
+      "instructions": [
+        "Explain the rules for this 32-symbol representation. Define the sign bit (1 symbol), the exponent (8 symbols), and the mantissa/fraction (23 symbols). What is the value of each symbol (A/a, B/b) and what is the exponent bias?"
+      ],
+      "testcases": [
+        "BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA = 1",
+        "bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA = -1",
+        "bAAAAABAABAAAAAAAAAAAAAAAAAAAAAA = -24",
+        "bAAAAAABBAAAAAAAAAAAAAAAAAAAAAAA = -8",
+        "BAAAABBAABAAAAAAAAAAAAAAAAAAAAAA = 6144"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "This final system represents a floating-point number with just 8 symbols. Based on the examples, figure out the underlying rules. (Hint: The exponent is not biased).\n\n- `BAAA0000` = +1 x 2<sup>0</sup> = 1\n- `Baai0100` = +1.25 x 2<sup>-8</sup> = 0.0048828125\n- `bABJ0000` = -1 x 2<sup>19</sup> = -524288\n- `baac1000` = -1.5 x 2<sup>-2</sup> = -0.375",
+      "instructions": [
+        "Explain the rules for this 8-symbol representation. Define the sign (1 symbol), exponent (3 symbols), and fraction (4 symbols). How do upper/lower case letters affect the exponent's sign and value?"
+      ],
+      "testcases": [
+        "BAAD0000 = 8",
+        "bAAA0000 = -1",
+        "Baah1000 = 0.01171875",
+        "bAAI1000 = -384",
+        "bABA1111 = -1984"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Using De Morgan's laws, demonstrate why `a XNOR b` is equivalent to `NOT (a XOR b)`.",
+      "instructions": [
+        "Provide a step-by-step proof using Boolean algebra. Start from the expression `NOT (a XOR b)` and apply De Morgan's laws and other algebraic properties until you arrive at the expression for `a XNOR b`."
+      ],
+      "testcases": [
+        "Prove that a XNOR b = NOT (a XOR b)"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Convert the Boolean expression `y = a(b + bc')` to its canonical sum-of-minterms form.",
+      "instructions": [
+        "Provide the step-by-step algebraic manipulation required to expand the expression into its final sum-of-minterms form. Show all intermediate steps, including the application of distributive laws and the expansion of terms to include all variables."
+      ],
+      "testcases": [
+        "Convert y = a(b + bc') to its canonical sum-of-minterms form."
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Convert the Boolean expression `y = a + b + c` to its canonical sum-of-minterms form.",
+      "instructions": [
+        "Describe the full expansion process to convert the given expression into its sum-of-minterms form. Each term must be expanded to include all variables (a, b, c) before simplifying the final expression."
+      ],
+      "testcases": [
+        "Convert y = a + b + c to its canonical sum-of-minterms form."
+      ]
+    },
+    {
+      "id": 4,
+      "text": "A product-of-maxterms (POM) expression is an ANDing of maxterms, where a maxterm is a sum (OR) term containing all function variables. Convert the expression `y = a'b + ac` to its canonical product-of-maxterms form.",
+      "instructions": [
+        "Provide a step-by-step process. This typically involves first finding the sum-of-minterms form, then finding the complement of the function to identify the zero-minterms, and finally using De Morgan's laws to derive the product-of-maxterms."
+      ],
+      "testcases": [
+        "Convert y = a'b + ac to its canonical product-of-maxterms form."
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The truth table below describes a function `y` with three inputs. Analyze the table and describe the general logic of this function.\n\n| y1 | y2 | y3 | y |\n|----|----|----|---|\n| 0  | 0  | 0  | 0 |\n| 0  | 0  | 1  | 0 |\n| 0  | 1  | 0  | 0 |\n| 0  | 1  | 1  | 1 |\n| 1  | 0  | 0  | 0 |\n| 1  | 0  | 1  | 1 |\n| 1  | 1  | 0  | 1 |\n| 1  | 1  | 1  | 1 |",
+      "instructions": [
+        "Describe the underlying logic of this function. What is its common name in digital logic? Based on this logic, how would a 5-input version of this function, z(z1, z2, z3, z4, z5), behave?"
+      ],
+      "testcases": [
+        "Identify the logic of the 3-input truth table and generalize its behavior for 5 inputs."
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A half-adder `(c, s) = HA(x, y)` is defined as `s = x XOR y` and `c = x AND y`. Describe how to use one or more half-adders to implement a 2-bit incrementer circuit `(c, y1, y0) = INC(x1, x0)`, where the 2-bit output `y1y0` is equal to the 2-bit input `x1x0` plus 1, and `c` is the final carry-out bit.",
+      "instructions": [
+        "Describe the circuit's structure and connections. Explain how the inputs `x1`, `x0`, and the constant `1` are processed by the half-adders to produce the correct outputs `y1`, `y0`, and the final carry `c`."
+      ],
+      "testcases": [
+        "Design a 2-bit incrementer circuit using only half-adders."
+      ]
+    }
+  ]
+}
